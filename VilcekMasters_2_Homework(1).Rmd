@@ -17,7 +17,8 @@ nyc$GENDER <- factor(nyc$GENDER, levels = 1:2, labels = c("male", "female"))
 install.packages("psych")
 library(psych)
 ```
-
+## Credit received ## 
+# one note on line 86
 
 >- Find summary information about the total blood mercury levels in our NYC HANES data (hint: names(nyc) will call the names of each column). What is the max value, what is the minimum value.  
 
@@ -82,6 +83,7 @@ class(nyc[, 10])
 class(nyc$KEY)
 "The cell class would be character, because the column 'KEY' is character. In matrices, the data in all of the cells are the same type."
 ```
+## Here, we are looking for the first 4 columns, so more along the lines of class(nyc[,1:4])
 
 
 >- If we make a vector,vec<- c(3,9,4,7,8,9), and multiply it by WannaMatrix, what is the value in the third row, third column? 
@@ -113,7 +115,7 @@ WannaMatrix*vec2
 ```{r}
 args(read.csv)
 ```
-
+#3 you can also use ?read.csv()
 
 >- Use apply() to find the median value of CADMIUM, LEAD CHOLESTEROLTOTAL, GLUCOSESI, CREATININESI, and CREATININE
 
